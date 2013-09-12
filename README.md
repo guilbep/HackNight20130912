@@ -1,4 +1,2 @@
 # Hacknight:
 
-App ID: 636965056335073
-App Secret: 4233b1236ca4c8c66ffcb6889e31681f
