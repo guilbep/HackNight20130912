@@ -1,0 +1,9 @@
+<div class="container" ng-controller="HomeCtrl">
+	<div class="row" ng-repeat="friend in data.data">
+		<div class="col col-lg-4" ng-bind="friend.name | json">
+		</div>
+		<div class="col col-lg-4">
+			<a ng-href="#/user/{{friend.id}}" ng-bind="friend.id"></a>
+		</div>
+	</div>
+</div>
