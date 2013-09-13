@@ -11,5 +11,10 @@
   "devDependencies": {
     "requirejs": "~2.1.8",
     "requirejs-text": "~2.0.10"
+  },
+  "dependencies": {
+    "angular-resource": "v1.2.0-rc.2",
+    "angular-route": "v1.2.0-rc.2",
+    "bootstrap": "~3.0.0"
   }
 }
