@@ -4,7 +4,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp', ['ngRoute', 'ngResource', 'myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
   config(['$routeProvider', function($routeProvider) {
-  	$routeProvider.when('/', {redirectTo: '/home'});
+    $routeProvider.when('/', {redirectTo: '/home'});
     $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
     $routeProvider.when('/user/:id', {templateUrl: 'partials/user.html', controller: 'UserCtrl'});
     $routeProvider.otherwise({redirectTo: '/home'});
@@ -22,12 +22,12 @@ angular.module('myApp', ['ngRoute', 'ngResource', 'myApp.filters', 'myApp.servic
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-  	//    FB.init({
-	  //   appId      : '636965056335073',
-	  //   channelUrl : '//pierreguilbert.com/'
-	  // });
-	   // console.log('init done');
-	  // FB.login();
+       FB.init({
+      appId      : '636965056335073',
+      channelUrl : '//pierreguilbert.com/'
+    });
+     console.log('init done');
+    FB.login();
 // function initialize() {
 //   var mapOptions = {
 //     zoom: 2,
@@ -38,12 +38,12 @@ angular.module('myApp', ['ngRoute', 'ngResource', 'myApp.filters', 'myApp.servic
 //   var map = new google.maps.Map(document.getElementById('map-canvas'),
 //       mapOptions);
 
-// 	  var marker = new google.maps.Marker({
-// 	  //"latitude": 31.790277777778, "longitude": -106.42333333333
-// 	  position: new google.maps.LatLng(31.7963882,-106.424922),
-// 	  map: map,
-// 	  title: 'Hello World!'
-// 	});
+//    var marker = new google.maps.Marker({
+//    //"latitude": 31.790277777778, "longitude": -106.42333333333
+//    position: new google.maps.LatLng(31.7963882,-106.424922),
+//    map: map,
+//    title: 'Hello World!'
+//  });
 // }
 
 // function loadScript() {
